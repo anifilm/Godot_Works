@@ -6,7 +6,6 @@
 [node name="Background" type="ParallaxBackground"]
 script = ExtResource("1_y82do")
 backgroundImage = ExtResource("1_5mqs0")
-scrollSpeedX = -10
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_mirroring = Vector2(1024, 1024)

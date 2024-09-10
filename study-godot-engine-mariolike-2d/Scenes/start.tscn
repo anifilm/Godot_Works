@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://g5qxw7kf8bgi"]
+[gd_scene load_steps=6 format=3 uid="uid://g5qxw7kf8bgi"]
 
+[ext_resource type="Script" path="res://Scripts/start.gd" id="1_8glrl"]
 [ext_resource type="FontFile" uid="uid://b4xhxa6g51075" path="res://Assets/폰트/MiraeroNormal.ttf" id="1_i07g7"]
 [ext_resource type="PackedScene" uid="uid://dmfm2vr6hyesc" path="res://Scenes/background.tscn" id="1_yfodg"]
 [ext_resource type="Texture2D" uid="uid://cvxql7bpl2ucm" path="res://Assets/캐릭터/Ninja Frog/Fall (32x32).png" id="2_ax2t2"]
@@ -20,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8glrl")
 
 [node name="Background" parent="." instance=ExtResource("1_yfodg")]
 
@@ -70,3 +72,5 @@ text = "The Secret of Flog Island"
 label_settings = SubResource("LabelSettings_kgilv")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="GameStart" to="." method="_on_game_start_pressed"]
