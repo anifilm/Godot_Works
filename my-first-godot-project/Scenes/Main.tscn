@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgbj5x1ui1joe"]
+
+[ext_resource type="PackedScene" uid="uid://to4fovmpgpc" path="res://Scenes/Background.tscn" id="1_kebdl"]
+[ext_resource type="PackedScene" uid="uid://cxvc3jff57t50" path="res://Scenes/Car.tscn" id="2_35wvy"]
+[ext_resource type="Script" path="res://Scripts/creatCupCake.gd" id="3_iud72"]
+[ext_resource type="PackedScene" uid="uid://dbn3yubmtvjse" path="res://Scenes/ScoreGUI.tscn" id="4_djtvp"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_kebdl")]
+
+[node name="Car" parent="." instance=ExtResource("2_35wvy")]
+position = Vector2(514, 880)
+
+[node name="CreatCupCake" type="Node" parent="."]
+script = ExtResource("3_iud72")
+
+[node name="Timer" type="Timer" parent="CreatCupCake"]
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreGui" parent="CanvasLayer" instance=ExtResource("4_djtvp")]
+
+[connection signal="timeout" from="CreatCupCake/Timer" to="CreatCupCake" method="_on_timer_timeout"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://to4fovmpgpc"]
+
+[ext_resource type="Script" path="res://Scripts/background.gd" id="1_fk21g"]
+[ext_resource type="Texture2D" uid="uid://c4bkqqhjyri6j" path="res://Assets/background.png" id="1_okkkc"]
+
+[node name="Background" type="ParallaxBackground"]
+script = ExtResource("1_fk21g")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(0, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+scale = Vector2(4, 4)
+texture = ExtResource("1_okkkc")
+centered = false
