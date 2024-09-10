@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://g5qxw7kf8bgi"]
+
+[ext_resource type="FontFile" uid="uid://b4xhxa6g51075" path="res://Assets/폰트/MiraeroNormal.ttf" id="1_i07g7"]
+[ext_resource type="PackedScene" uid="uid://dmfm2vr6hyesc" path="res://Scenes/background.tscn" id="1_yfodg"]
+[ext_resource type="Texture2D" uid="uid://cvxql7bpl2ucm" path="res://Assets/캐릭터/Ninja Frog/Fall (32x32).png" id="2_ax2t2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kgilv"]
+font = ExtResource("1_i07g7")
+font_size = 80
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.6)
+shadow_offset = Vector2(3, 3)
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" parent="." instance=ExtResource("1_yfodg")]
+
+[node name="Container" type="Container" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="FlogImage" type="Sprite2D" parent="Container"]
+position = Vector2(188, -143)
+scale = Vector2(8.35938, 8.35938)
+texture = ExtResource("2_ax2t2")
+
+[node name="GameStart" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -224.0
+offset_top = -209.0
+offset_right = 227.0
+offset_bottom = -132.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "Press to Game Start"
+
+[node name="GameTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -552.0
+offset_top = -195.0
+offset_right = 554.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "The Secret of Flog Island"
+label_settings = SubResource("LabelSettings_kgilv")
+horizontal_alignment = 1
+vertical_alignment = 1
