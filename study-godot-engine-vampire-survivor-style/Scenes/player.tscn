@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://df6bfe73wet41"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_lsufy"]
+[ext_resource type="PackedScene" uid="uid://cfhrwc7y7itsr" path="res://Scenes/Farmer_0.tscn" id="1_vyt1o"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r7cn2"]
+radius = 6.0
+height = 18.0
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_lsufy")
+
+[node name="Farmer0" parent="." instance=ExtResource("1_vyt1o")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_r7cn2")
