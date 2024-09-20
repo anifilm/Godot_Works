@@ -1,9 +1,67 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccm0naw8miq0k"]
+[gd_scene load_steps=4 format=3 uid="uid://ccm0naw8miq0k"]
 
 [ext_resource type="Texture2D" uid="uid://dvjeqtey2e3r8" path="res://icon.svg" id="1_81nbv"]
+[ext_resource type="PackedScene" uid="uid://brfk1jcw363oc" path="res://Character/character.tscn" id="2_uxcva"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgiv0"]
+size = Vector2(128, 128)
 
 [node name="Level1" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(337, 221)
+[node name="Character" parent="." instance=ExtResource("2_uxcva")]
+position = Vector2(296, 288)
+scale = Vector2(4, 4)
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(288, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor"]
 texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+position = Vector2(416, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor2"]
+texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+position = Vector2(544, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor3"]
+texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor4" type="StaticBody2D" parent="."]
+position = Vector2(768, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor4"]
+texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor5" type="StaticBody2D" parent="."]
+position = Vector2(896, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor5"]
+texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor6" type="StaticBody2D" parent="."]
+position = Vector2(1024, 440)
+
+[node name="Icon" type="Sprite2D" parent="Floor6"]
+texture = ExtResource("1_81nbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor6"]
+shape = SubResource("RectangleShape2D_kgiv0")
