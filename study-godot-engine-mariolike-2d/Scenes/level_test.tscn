@@ -1,0 +1,94 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsp3st8ai8usw"]
+
+[ext_resource type="PackedScene" uid="uid://brfk1jcw363oc" path="res://Character/character.tscn" id="1_4lwld"]
+[ext_resource type="Texture2D" uid="uid://dvjeqtey2e3r8" path="res://icon.svg" id="2_jm1ha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgiv0"]
+size = Vector2(128, 128)
+
+[node name="Level_Test" type="Node2D"]
+
+[node name="Character" parent="." instance=ExtResource("1_4lwld")]
+position = Vector2(216, 344)
+scale = Vector2(4, 4)
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(208, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor2" type="StaticBody2D" parent="."]
+position = Vector2(336, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor2"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor3" type="StaticBody2D" parent="."]
+position = Vector2(464, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor3"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor4" type="StaticBody2D" parent="."]
+position = Vector2(688, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor4"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor5" type="StaticBody2D" parent="."]
+position = Vector2(816, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor5"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor6" type="StaticBody2D" parent="."]
+position = Vector2(944, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor6"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor6"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor7" type="StaticBody2D" parent="."]
+position = Vector2(1072, 496)
+
+[node name="Icon" type="Sprite2D" parent="Floor7"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor7"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor8" type="StaticBody2D" parent="."]
+position = Vector2(1072, 368)
+
+[node name="Icon" type="Sprite2D" parent="Floor8"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor8"]
+shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Floor9" type="StaticBody2D" parent="."]
+position = Vector2(1072, 240)
+
+[node name="Icon" type="Sprite2D" parent="Floor9"]
+texture = ExtResource("2_jm1ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor9"]
+shape = SubResource("RectangleShape2D_kgiv0")
