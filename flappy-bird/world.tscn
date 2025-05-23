@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://c8wk6lto8e68r"]
+
+[ext_resource type="Texture2D" uid="uid://yu5w6lyqxy6y" path="res://assets/textures/background.png" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://d3d6oe1tpqmfm" path="res://world.gd" id="1_pkg7o"]
+[ext_resource type="Script" uid="uid://q7g7jtd1sllc" path="res://environment/reposition.gd" id="2_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://bjsqe3436saab" path="res://characters/player/player.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://db36r6geqfdlt" path="res://environment/obstacle_spawner.tscn" id="3_036b0"]
+[ext_resource type="PackedScene" uid="uid://c6026s4w6jdb0" path="res://ui/menu_layer.tscn" id="3_gbfbk"]
+[ext_resource type="PackedScene" uid="uid://dpjtd3ymxh4o2" path="res://environment/ground.tscn" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://bcaf2yt6kkri3" path="res://ui/hud.tscn" id="4_dwbse"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_pkg7o")
+
+[node name="HUD" parent="." instance=ExtResource("4_dwbse")]
+visible = false
+
+[node name="MenuLayer" parent="." instance=ExtResource("3_gbfbk")]
+
+[node name="Background_1" type="Sprite2D" parent="." groups=["move_bg"]]
+texture = ExtResource("1_f3sb7")
+centered = false
+script = ExtResource("2_aqk2v")
+move_speed = 50
+
+[node name="Background_2" type="Sprite2D" parent="." groups=["move_bg"]]
+position = Vector2(460, 0)
+texture = ExtResource("1_f3sb7")
+centered = false
+script = ExtResource("2_aqk2v")
+move_speed = 50
+
+[node name="ObstacleSpawner" parent="." instance=ExtResource("3_036b0")]
+position = Vector2(700, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_fj7yv")]
+visible = false
+position = Vector2(240, 340)
+
+[node name="Ground" parent="." instance=ExtResource("3_tlwt5")]
+position = Vector2(0, 690)
+
+[connection signal="start_game" from="MenuLayer" to="." method="_on_menu_layer_start_game"]
+[connection signal="died" from="Player" to="." method="_on_player_died"]
+[connection signal="body_entered" from="Ground/DeathZone" to="." method="_on_death_zone_body_entered"]
+
+[editable path="Ground"]
