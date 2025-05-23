@@ -5,6 +5,7 @@ signal died
 
 var FLAP_FORCE = -500
 const MAX_ROTATION_DEGREES = -25.0
+const MAX_MOVE_HEIGHT = -10
 
 @onready var animator = $AnimationPlayer
 @onready var hit = $Hit
@@ -20,11 +21,14 @@ func _physics_process(_delta: float) -> void:
 		if !started:
 			start()
 		flap()
+
+	if global_position.y <= MAX_MOVE_HEIGHT:
+		global_position.y = MAX_MOVE_HEIGHT 
 		
 	if rotation_degrees <= MAX_ROTATION_DEGREES:
 		angular_velocity = 0
 		rotation_degrees = MAX_ROTATION_DEGREES
-	
+
 	if linear_velocity.y > 0:
 		if rotation_degrees <= 90:
 			angular_velocity = 2
@@ -41,7 +45,7 @@ func flap():
 	linear_velocity.y = FLAP_FORCE
 	angular_velocity = -12.0
 	wing.play()
-	
+
 func die():
 	if !alive: return
 	alive = false
