@@ -1,15 +1,13 @@
 extends ParallaxBackground
 
-
+@onready var sprite = $ParallaxLayer/Sprite2D
 @export var backgroundImage:CompressedTexture2D
 @export var scrollSpeedX = 10
 @export var scrollSpeedY = 10
-@onready var sprite = $ParallaxLayer/Sprite2D
 
 
 func _ready() -> void:
 	sprite.texture = backgroundImage
-
 
 func _process(delta: float) -> void:
 	sprite.region_rect.position += Vector2(scrollSpeedX, scrollSpeedY) * delta

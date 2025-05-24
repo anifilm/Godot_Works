@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var moveSpeed = 200
 @onready var sprite = $AnimatedSprite2D
 
+
 var is_jump = false
 var is_wall = false
 
