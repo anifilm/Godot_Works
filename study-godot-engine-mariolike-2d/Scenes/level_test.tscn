@@ -13,6 +13,7 @@ size = Vector2(128, 128)
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(208, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor"]
 texture = ExtResource("2_jm1ha")
@@ -22,6 +23,7 @@ shape = SubResource("RectangleShape2D_ovy8i")
 
 [node name="Floor2" type="StaticBody2D" parent="."]
 position = Vector2(336, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor2"]
 texture = ExtResource("2_jm1ha")
@@ -31,6 +33,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor3" type="StaticBody2D" parent="."]
 position = Vector2(464, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor3"]
 texture = ExtResource("2_jm1ha")
@@ -40,6 +43,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor4" type="StaticBody2D" parent="."]
 position = Vector2(688, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor4"]
 texture = ExtResource("2_jm1ha")
@@ -49,6 +53,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor5" type="StaticBody2D" parent="."]
 position = Vector2(816, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor5"]
 texture = ExtResource("2_jm1ha")
@@ -58,6 +63,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor6" type="StaticBody2D" parent="."]
 position = Vector2(944, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor6"]
 texture = ExtResource("2_jm1ha")
@@ -67,6 +73,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor7" type="StaticBody2D" parent="."]
 position = Vector2(1072, 496)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor7"]
 texture = ExtResource("2_jm1ha")
@@ -76,6 +83,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor8" type="StaticBody2D" parent="."]
 position = Vector2(1072, 368)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor8"]
 texture = ExtResource("2_jm1ha")
@@ -85,6 +93,7 @@ shape = SubResource("RectangleShape2D_kgiv0")
 
 [node name="Floor9" type="StaticBody2D" parent="."]
 position = Vector2(1072, 240)
+collision_layer = 2
 
 [node name="Icon" type="Sprite2D" parent="Floor9"]
 texture = ExtResource("2_jm1ha")
