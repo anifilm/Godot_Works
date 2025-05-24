@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmfm2vr6hyesc"]
 
 [ext_resource type="Texture2D" uid="uid://cnqouojny12rf" path="res://Assets/배경/Gray.png" id="1_5mqs0"]
-[ext_resource type="Script" path="res://Scripts/background.gd" id="1_y82do"]
+[ext_resource type="Script" uid="uid://dv5ax4y4kve1n" path="res://Scripts/background.gd" id="1_y82do"]
 
 [node name="Background" type="ParallaxBackground"]
 script = ExtResource("1_y82do")

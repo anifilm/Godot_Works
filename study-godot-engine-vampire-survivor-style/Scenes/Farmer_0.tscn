@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://cfhrwc7y7itsr"]
 
-[ext_resource type="Script" path="res://Scripts/farmer_0.gd" id="1_2lmie"]
+[ext_resource type="Script" uid="uid://u6kh0d8w8yxa" path="res://Scripts/farmer_0.gd" id="1_2lmie"]
 [ext_resource type="Texture2D" uid="uid://spyl0rhh3sq5" path="res://Assets/Sprites/Props.png" id="1_43d8w"]
 [ext_resource type="Texture2D" uid="uid://bs0hhmswdv3ex" path="res://Assets/Sprites/Farmer 0.png" id="1_op1ln"]
 

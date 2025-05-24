@@ -1,7 +1,7 @@
 [gd_scene load_steps=52 format=3 uid="uid://brfk1jcw363oc"]
 
 [ext_resource type="Texture2D" uid="uid://cvxql7bpl2ucm" path="res://Assets/캐릭터/Ninja Frog/Fall (32x32).png" id="1_aemxi"]
-[ext_resource type="Script" path="res://Character/character.gd" id="1_dkqo5"]
+[ext_resource type="Script" uid="uid://1wmtqw4jcbhl" path="res://Character/character.gd" id="1_dkqo5"]
 [ext_resource type="Texture2D" uid="uid://doxlcli0hucg6" path="res://Assets/캐릭터/Ninja Frog/Idle (32x32).png" id="2_1t1s8"]
 [ext_resource type="Texture2D" uid="uid://c6yu0xv8npffu" path="res://Assets/캐릭터/Ninja Frog/Hit (32x32).png" id="3_5dbgo"]
 [ext_resource type="Texture2D" uid="uid://ch42ff3quhphi" path="res://Assets/캐릭터/Ninja Frog/Jump (32x32).png" id="3_icywp"]
@@ -354,7 +354,7 @@ script = ExtResource("1_dkqo5")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_yah56")
-animation = &"Jump_Double"
+animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

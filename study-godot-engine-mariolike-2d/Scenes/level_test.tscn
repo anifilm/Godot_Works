@@ -1,16 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsp3st8ai8usw"]
+[gd_scene load_steps=5 format=3 uid="uid://bsp3st8ai8usw"]
 
 [ext_resource type="PackedScene" uid="uid://brfk1jcw363oc" path="res://Character/character.tscn" id="1_4lwld"]
 [ext_resource type="Texture2D" uid="uid://dvjeqtey2e3r8" path="res://icon.svg" id="2_jm1ha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ovy8i"]
+size = Vector2(128, 128)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgiv0"]
 size = Vector2(128, 128)
 
 [node name="Level_Test" type="Node2D"]
-
-[node name="Character" parent="." instance=ExtResource("1_4lwld")]
-position = Vector2(216, 344)
-scale = Vector2(4, 4)
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(208, 496)
@@ -19,7 +18,7 @@ position = Vector2(208, 496)
 texture = ExtResource("2_jm1ha")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
-shape = SubResource("RectangleShape2D_kgiv0")
+shape = SubResource("RectangleShape2D_ovy8i")
 
 [node name="Floor2" type="StaticBody2D" parent="."]
 position = Vector2(336, 496)
@@ -92,3 +91,7 @@ texture = ExtResource("2_jm1ha")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor9"]
 shape = SubResource("RectangleShape2D_kgiv0")
+
+[node name="Character" parent="." instance=ExtResource("1_4lwld")]
+position = Vector2(216, 344)
+scale = Vector2(4, 4)

@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Study Godot Engine Mariolike 2D"
-run/main_scene="res://Scenes/start.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+run/main_scene="uid://bsp3st8ai8usw"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [display]

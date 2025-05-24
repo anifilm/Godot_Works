@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://df6bfe73wet41"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_lsufy"]
+[ext_resource type="Script" uid="uid://b38tp8t66lwsh" path="res://Scripts/player.gd" id="1_lsufy"]
 [ext_resource type="PackedScene" uid="uid://cfhrwc7y7itsr" path="res://Scenes/Farmer_0.tscn" id="1_vyt1o"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r7cn2"]

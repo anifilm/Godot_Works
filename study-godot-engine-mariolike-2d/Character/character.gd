@@ -43,7 +43,6 @@ func _physics_process(delta: float) -> void:
 		is_jump = false
 		is_wall = false
 
-
 	# 좌, 우로 이동
 	if Input.is_action_pressed("Left"):
 		if !is_wall:
@@ -73,7 +72,5 @@ func _physics_process(delta: float) -> void:
 			sprite.play("Jump")
 		else:
 			sprite.play("Fall")
-
-
 
 	move_and_slide()
