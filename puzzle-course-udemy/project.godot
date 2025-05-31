@@ -24,3 +24,7 @@ window/stretch/mode="viewport"
 [dotnet]
 
 project/assembly_name="PuzzleCourse"
+
+[editor]
+
+naming/scene_name_casing=1
