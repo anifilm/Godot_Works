@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoketmonLike", "PoketmonLike.csproj", "{ADF49389-7495-4BE8-98F6-3B751ABBDF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{ADF49389-7495-4BE8-98F6-3B751ABBDF93}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
