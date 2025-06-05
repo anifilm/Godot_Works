@@ -15,6 +15,10 @@ run/main_scene="uid://dhvxooit8hsc2"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://scripts/core/Globals.cs"
+
 [display]
 
 window/size/window_width_override=1920
@@ -28,3 +32,11 @@ project/assembly_name="PuzzleCourse"
 [editor]
 
 naming/scene_name_casing=1
+
+[input]
+
+LeftClick={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+, null]
+}
