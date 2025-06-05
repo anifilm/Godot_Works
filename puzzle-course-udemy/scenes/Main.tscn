@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhvxooit8hsc2"]
+[gd_scene load_steps=4 format=3 uid="uid://dhvxooit8hsc2"]
 
 [ext_resource type="Script" uid="uid://bxphag8ik6kvh" path="res://scripts/Main.cs" id="1_elqb8"]
+[ext_resource type="TileSet" uid="uid://bs40tt7wrnnmq" path="res://resources/HighlightTileset.tres" id="2_rvslj"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_elqb8"]
 size = Vector2(64, 64)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_elqb8")
+
+[node name="HighlightTileMapLayer" type="TileMapLayer" parent="."]
+modulate = Color(1, 1, 1, 0.486275)
+tile_set = ExtResource("2_rvslj")
 
 [node name="Cursor" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_elqb8")
@@ -17,9 +22,9 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 3.0
-offset_top = 614.0
+offset_top = 685.0
 offset_right = 120.0
-offset_bottom = 645.0
+offset_bottom = 716.0
 grow_vertical = 0
 size_flags_vertical = 0
 text = "Place Building"
